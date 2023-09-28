@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+button {
+    display: block;
+    width: 80%;
+    height: 2.5rem;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    background: transparent;
+    margin-left: 1rem;
+}
+
+button:hover {
+    border: none;
+    background: #333;
+    color: #fff;
+}
+
+.btnGroup {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.results {
+    width: 80%;
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.display .defaultResult {
+    text-transform: uppercase;
+    font-size: large;
+    color: #aaa;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background: #f1f1f1;
+}
+
+.length {
+    margin: 2rem 0;
+}
+
+.active {
+    border: none;
+    background: #333;
+    color: #fff;
+}
+
+h6 {
+    text-transform: uppercase;
+    color: #2868f1;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
