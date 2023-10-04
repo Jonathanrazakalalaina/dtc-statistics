@@ -16,25 +16,28 @@ h1 {
 .selectOrderDate {
     display: block;
     width: 50%;
-    height: 2.5rem;
+    height: 2rem;
     border-color: #aaa;
     border-radius: 0px;
     margin-left: 1rem;
     cursor: pointer;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 button {
     display: block;
+    margin-bottom: 0.5rem;
     width: 80%;
-    height: 2.5rem;
+    height: 2rem;
     cursor: pointer;
     border: 1px solid #aaa;
     background: transparent;
     margin-left: 1rem;
 }
 
-button:hover, .selectOrderDate:hover {
+button:hover,
+.selectOrderDate:hover {
     border-color: #000;
 }
 
@@ -43,6 +46,14 @@ button:hover, .selectOrderDate:hover {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.btnGroup > div {
+    position: fixed;
+    top: 1rem;
+    height: 100vh;
+    overflow-y: scroll;
+    bottom: 1rem;
 }
 
 .results {
@@ -73,7 +84,8 @@ button:hover, .selectOrderDate:hover {
     background: #f1f1f1;
 }
 
-.orderDate, .shipDate {
+.orderDate,
+.shipDate {
     position: absolute;
     top: 0.5rem;
     color: #fff;

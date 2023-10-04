@@ -12,37 +12,38 @@
             <div class="btnGroup">
                 <!-- <h6>Graphics</h6>
                 <button class="charts">Charts</button> -->
+                <div>
+                    <h6>Sort by order date</h6>
+                    <select class="selectOrderDate">
+                        <option value="">--</option>
+                    </select>
 
-                <h6>Sort by order date</h6>
-                <select class="selectOrderDate">
-                    <option value="">--</option>
-                </select>
+                    <!-- ALL -->
+                    <h6>All</h6>
+                    <button class="all">All items</button>
 
-                <!-- ALL -->
-                <h6>All</h6>
-                <button class="all">All items</button>
+                    <!-- ITEMS-TYPES -->
+                    <h6>Sort by items types</h6>
+                    <button class="clothes">Clothes</button>
+                    <button class="officeSupplies">Office Supplies</button>
+                    <button class="snacks">Snacks</button>
+                    <button class="household">Household</button>
+                    <button class="fruits">Fruits</button>
+                    <button class="beverages">Beverages</button>
 
-                <!-- ITEMS-TYPES -->
-                <h6>Sort by items types</h6>
-                <button class="clothes">Clothes</button>
-                <button class="officeSupplies">Office Supplies</button>
-                <button class="snacks">Snacks</button>
-                <button class="household">Household</button>
-                <button class="fruits">Fruits</button>
-                <button class="beverages">Beverages</button>
+                    <!-- SALES-CHANNEL -->
+                    <h6>Sort by sales channel</h6>
+                    <button class="saleschannelOnline">Online</button>
+                    <button class="saleschannelOffline">Offline</button>
 
-                <!-- SALES-CHANNEL -->
-                <h6>Sort by sales channel</h6>
-                <button class="saleschannelOnline">Online</button>
-                <button class="saleschannelOffline">Offline</button>
+                    <!-- MOST SOLD -->
+                    <h6>Popular</h6>
+                    <button class="mostsold">Most sold</button>
 
-                <!-- MOST SOLD -->
-                <h6>Popular</h6>
-                <button class="mostsold">Most sold</button>
-
-                <!-- PRICE -->
-                <h6>Prices</h6>
-                <button class="minToMaxPrice">Sort by price</button>
+                    <!-- PRICE -->
+                    <h6>Prices</h6>
+                    <button class="minToMaxPrice">Sort by price</button>
+                </div>
             </div>
 
             <div class="results">
@@ -50,8 +51,12 @@
                 <div class="display">
                     <!-- <p class="defaultResult">Results appear here :)</p> -->
                     <p class="chartTitle">Available regions</p>
-                    <canvas id="polarAreaTypeChart" width="500" height="300"></canvas>
-                    
+                    <canvas
+                        id="polarAreaTypeChart"
+                        width="500"
+                        height="300"
+                    ></canvas>
+
                     <p class="chartTitle">Units sold per year</p>
                     <canvas id="lineTypeChart"></canvas>
 
