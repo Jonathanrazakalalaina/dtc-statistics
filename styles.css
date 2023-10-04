@@ -42,22 +42,23 @@ button:hover,
 }
 
 .btnGroup {
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
 }
 
 .btnGroup > div {
     position: fixed;
+    left: 1rem;
     top: 1rem;
     height: 100vh;
     overflow-y: scroll;
     bottom: 1rem;
+    width: 25%;
 }
 
 .results {
-    width: 80%;
+    width: 70%;
 }
 
 .display {
@@ -113,6 +114,7 @@ button:hover,
     border: none;
     background: #333;
     color: #fff;
+    border-radius: 0 30px 30px 0;
 }
 
 h6 {
