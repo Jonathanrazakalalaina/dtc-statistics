@@ -13,6 +13,17 @@ h1 {
     flex-wrap: wrap;
 }
 
+.selectOrderDate {
+    display: block;
+    width: 50%;
+    height: 2.5rem;
+    border-color: #aaa;
+    border-radius: 0px;
+    margin-left: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
 button {
     display: block;
     width: 80%;
@@ -23,10 +34,8 @@ button {
     margin-left: 1rem;
 }
 
-button:hover {
-    border: none;
-    background: #333;
-    color: #fff;
+button:hover, .selectOrderDate:hover {
+    border-color: #000;
 }
 
 .btnGroup {
@@ -56,10 +65,32 @@ button:hover {
 }
 
 .card {
+    position: relative;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.5rem;
+    padding-top: 1rem;
     background: #f1f1f1;
+}
+
+.orderDate, .shipDate {
+    position: absolute;
+    top: 0.5rem;
+    color: #fff;
+    font-size: small;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.orderDate {
+    background: #333;
+    right: 3rem;
+}
+
+.shipDate {
+    background: #2868f1;
+    right: 0.5rem;
 }
 
 .length {
@@ -77,4 +108,10 @@ h6 {
     color: #2868f1;
     font-size: 1rem;
     margin: 0.5rem 0;
+}
+
+.chartTitle {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #aaa;
 }

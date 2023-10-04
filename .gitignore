@@ -1,3 +1,6 @@
 # /dtc-js-main
 /dtc-js-main/
 data.js
+/node_modules/
+package-lock.json
+package.json
